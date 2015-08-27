@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1" name="google-signin-client_id" content="1010472356287-pdki59qrqm3u2admm5l0unlqrva839di.apps.googleusercontent.com">
+<title>Login</title>
+<link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+</head>
+<body>
+<div>
+<div class="g-signin2" data-onsuccess="onSignIn"></div>
+<a href="#" onclick="signOut();">Sign out</a>
+</div>
+
+<div id="divTelephoneNumbers" class="div-center div-hide">
+
+<div>
+<label>Telephone Number</label>
+</div>
+<div>
+<input type="text" id="inputTelephoneNumber" placeholder="999-999-9999"/>
+</div>
+<div>
+<button onclick="validateTelephone(1)" class="button">Submit</button>
+</div>
+</div>
+<div id="divTelephoneNumberErrorMessage" class="div-hide div-center">
+<p class="has-error">Telephone Number is not valid</p>
+</div>
+
+<div id="div-telephoneNumbers" class="div-center">
+
+</div>
+
+<div class="container div-center ">
+  <h2>Pages</h2>                 
+  <ul class="pagination">
+    <li><button onclick="validateTelephone(1)">1</button></li>
+    <li><button onclick="validateTelephone(2)">2</button></li>
+    <li><button onclick="validateTelephone(3)">3</button></li>
+    <li><button onclick="validateTelephone(4)">4</button></li>
+    <li><button onclick="validateTelephone(5)">5</button></li>
+  </ul>
+</div>
+
+
+<script src="https://apis.google.com/js/platform.js" async defer></script>
+<script src="scripts/main.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+</body>
+</html>
